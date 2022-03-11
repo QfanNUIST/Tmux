@@ -16,6 +16,18 @@ ctrl + b p/n
 # 切换窗格
 ctrl + b o
 
+# tmux attach命令用于重新接入某个已存在的会话。
+# 使用会话编号
+$ tmux attach -t 0
+# 使用会话名称
+$ tmux attach -t <session-name>
+
+# tmux kill-session命令用于杀死某个会话。
+# 使用会话编号
+$ tmux kill-session -t 0
+# 使用会话名称
+$ tmux kill-session -t <session-name>
+
 Ctrl+b %：划分左右两个窗格。
 Ctrl+b "：划分上下两个窗格。
 Ctrl+b <arrow key>：光标切换到其他窗格。<arrow key>是指向要切换到的窗格的方向键，比如切换到下方窗格，就按方向键↓。
@@ -36,17 +48,6 @@ $ tmux ls
 # or
 $ tmux list-session
 
-# tmux attach命令用于重新接入某个已存在的会话。
-# 使用会话编号
-$ tmux attach -t 0
-# 使用会话名称
-$ tmux attach -t <session-name>
 
-# tmux kill-session命令用于杀死某个会话。
-# 使用会话编号
-$ tmux kill-session -t 0
-
-# 使用会话名称
-$ tmux kill-session -t <session-name>
 
 more： http://www.ruanyifeng.com/blog/2019/10/tmux.html
