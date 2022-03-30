@@ -3,6 +3,8 @@ Tmux常用操作
 
 # 创建一个新的Tmux工作区会话
 tmux new -s session_name
+# 查看所有tmux文件
+tmux ls
 
 # 竖分屏
 ctrl + b %
